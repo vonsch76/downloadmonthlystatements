@@ -7,7 +7,7 @@ Amennyiben te feltöltöd a könyvelés részére az előző havi számlák expo
 Használat:
 1. A script.google.com oldalon nyiss egy új projektet és nevezd el, ahogy szeretnéd. 
 2. Másold át a Code.gs és Conf.gs állományt a script.google.com-on egy új projektbe. 
-3. Tölts ki a hiányzó kódokat és adatokat a Config.gs fájlban.
+3. Tölts ki a hiányzó kódokat és adatokat a Conf.gs fájlban.
 A Billingo API kulcsot a beállításokban találod, v3-as kulcs kell, olvasási és írási joggal.
 A Barion POS kulcsot az üzlet beállítások alatt találod meg.
 Ha a Google driveon egy adott könyvtártól szeretnéd kezdeni, mint XY_konyveles, akkor ennek az ID-jét a driven történő megnyitással, a böngésző címsorában látod, pl. 
