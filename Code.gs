@@ -167,9 +167,9 @@ function prevMonth(first=undefined, fordir=undefined){
 
   let formatDate = function(date) {
     if(fordir === true)
-          return formatDateComponent(date.getFullYear() + '_' + date.getMonth() + 1);
+      return formatDateComponent(date.getFullYear()) + '_' + formatDateComponent(date.getMonth() + 1));
     else
-      return formatDateComponent(date.getFullYear() + '-' + date.getMonth() + 1) + '-' + formatDateComponent(date.getDate());
+      return formatDateComponent(date.getFullYear() + '-' + formatDateComponent(date.getMonth() + 1)) + '-' + formatDateComponent(date.getDate());
   };
 
   if(first === true)
