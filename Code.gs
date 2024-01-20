@@ -76,7 +76,7 @@ function get_barion_statements(){
 
   exp_type.forEach(function(exp) {
     let resp;
-    resp = barionRequest('GET','/Statement/Download', {'Year' : d.getMonth() === 0 ? d.getFullYear()-- : d.getFullYear(), 'Month' : d.getMonth() === 0 ? 11 : d.getMonth(), 'currency': exp}, undefined);
+    resp = barionRequest('GET','/Statement/Download', {'Year' : d.getMonth() === 0 ? d.getFullYear()-- : d.getFullYear(), 'Month' : d.getMonth() === 0 ? 12 : d.getMonth(), 'currency': exp}, undefined);
     if(resp.code == 200){
       blob = Utilities.newBlob(resp.payload, MimeType.PDF, 'barion_' + exp + prevMonth(null, true) + '.pdf');
     } else
